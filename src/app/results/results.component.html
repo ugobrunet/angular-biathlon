@@ -1,0 +1,16 @@
+<div *ngFor="let result of results">
+
+  <!-- <h3 *ngIf="result.Leg == 0"> -->
+  <h3>
+      #{{result.Rank}} - {{ result.Name }} 
+      : 
+      {{ result.Shootings }}
+      -
+      {{ getTime(result) }}
+  </h3>
+
+  <div *ngFor="let subResult of result.Results">
+    {{ subResult.Name }}
+  </div>
+
+</div>

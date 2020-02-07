@@ -1,0 +1,11 @@
+<div *ngFor="let competition of competitions">
+
+  <h3>
+    <a routerLink="/results/{{competition.RaceId}}">
+      {{ competition.StartTime | date:'d LLL HH:mm' | uppercase }} 
+      :
+      {{ competition.ShortDescription }} 
+    </a>
+  </h3>
+
+</div>

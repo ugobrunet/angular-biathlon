@@ -1,0 +1,14 @@
+<div *ngFor="let event of events">
+
+  <h3>
+    <a routerLink="/competitions/{{event.EventId}}">
+      {{ event.StartDate | date:'d LLL' | uppercase }} 
+      - 
+      {{ event.EndDate | date:'d LLL yyyy' | uppercase}}
+      :
+      {{ event.ShortDescription }} 
+      ({{event.Nat}}) 
+    </a>
+  </h3>
+
+</div>
